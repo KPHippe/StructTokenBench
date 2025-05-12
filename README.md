@@ -69,6 +69,7 @@ Table of contents:
 
 # Updates
 
+- May 1st, 2025: StructTokenBench is accepted to ICML 2025!
 - Apr 24th, 2025: StructTokenBench code released!
 - Feb 28th, 2025: StructTokenBench preprint release on arxiv!
 
