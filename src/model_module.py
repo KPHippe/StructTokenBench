@@ -26,8 +26,8 @@ from tape import ProteinBertModel
 from biotite.sequence import Alphabet, Sequence, GeneralSequence
 from biotite.sequence.align import align_optimal, SubstitutionMatrix
 
-from util import accuracy, get_optimizer, calculate_regression_metric, calculate_binary_clf_metric, calculate_multiclass_clf_metric
-from modeling_util import model_init_fn
+from src.util import accuracy, get_optimizer, calculate_regression_metric, calculate_binary_clf_metric, calculate_multiclass_clf_metric
+from src.modeling_util import model_init_fn
 from vqvae.quantizer_module import get_codebook_utility
 
 

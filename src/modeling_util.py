@@ -1,7 +1,7 @@
 import torch
 import deepspeed
 
-from util import get_dtype
+from src.util import get_dtype
 
 def model_init_fn(trainer, model_cfg, **model_kwargs):
     """deepspeed-compatible model initialization
@@ -20,8 +20,8 @@ def model_init_fn(trainer, model_cfg, **model_kwargs):
         enabled=is_zero3,
     )
     
-    from model_module import SequenceClassificationModel, ZeroshotProximityModel, ZeroShotCodebookUtilityModel
-    from vqvae_model import VQVAEModel
+    from src.model_module import SequenceClassificationModel, ZeroshotProximityModel, ZeroShotCodebookUtilityModel
+    from src.vqvae_model import VQVAEModel
 
     with context:
         model = eval(model_cfg.class_name)(

@@ -32,13 +32,13 @@ from esm.utils.structure.predicted_aligned_error import (
 )
 from esm.utils.structure.protein_structure import infer_cbeta_from_atom37
 
-from modeling_util import model_init_fn
-from vqvae.quantizer_module import *
-from util import get_optimizer
+from src.modeling_util import model_init_fn
+from src.vqvae.quantizer_module import *
+from src.util import get_optimizer
 
-from vqvae.blocks import VanillaUnifiedTransformerBlock
-from vqvae.transformer_stack import VanillaTransformerStack
-from protein_chain import WrappedProteinChain
+from src.vqvae.blocks import VanillaUnifiedTransformerBlock
+from src.vqvae.transformer_stack import VanillaTransformerStack
+from src.protein_chain import WrappedProteinChain
 
 
 def batched_gather(data, inds, dim=0, no_batch_dims=0):

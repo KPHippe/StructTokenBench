@@ -4,8 +4,8 @@ import torch.nn.functional as F
 
 from esm.utils.structure.affine3d import Affine3D
 
-from vqvae.attention import VanillaMultiHeadAttention
-from vqvae.geom_attention import VanillaGeometricReasoningOriginalImpl
+from src.vqvae.attention import VanillaMultiHeadAttention
+from src.vqvae.geom_attention import VanillaGeometricReasoningOriginalImpl
 
 def swiglu_correction_fn(expansion_ratio: float, d_model: int) -> int:
     # set hidden dimesion to nearest multiple of 256 after expansion ratio

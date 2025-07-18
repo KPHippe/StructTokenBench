@@ -5,7 +5,7 @@ import torch.nn as nn
 
 from esm.utils.structure.affine3d import Affine3D
 
-from vqvae.blocks import VanillaUnifiedTransformerBlock
+from src.vqvae.blocks import VanillaUnifiedTransformerBlock
 
 
 class VanillaTransformerStack(nn.Module):

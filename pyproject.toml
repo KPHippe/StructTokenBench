@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "structtokenbench"
+version = "0.1.0"
+description = "A minimal package for the AminoSeed structure tokenizer from StructTokenBench."
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch",
+    "numpy",
+    "hydra-core",
+    "omegaconf",
+    "biotite",
+    "biopython",
+    "cloudpathlib"
+    # "esm"  # Uncomment if ESM3 is required and available on PyPI
+] 
